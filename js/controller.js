@@ -3,14 +3,18 @@
  - Programador: Welbert Araujo
 */
 
+var botao = document.getElementById("calcular");
+botao.addEventListener('click', function(){
+    var paciente = lerPaciente();
+    mostraPaciente(paciente);
+});
 
-var nome = 'Renato Oliveira';
-var peso = 76.00;
-var altura = 1.78;
-var imc = peso / (altura**2); //imc
 
+//objeto paciente dados relacionados a mesma entidade
+// var paciente = {
+//     nome = 'Renato Oliveira',
+//     peso = 76.00,
+//     altura = 1.78
+// };
 
-
-console.log(nome);
-console.log(`Peso: ${peso} - Altura: ${altura}`);
-console.log(`Calculo do IMC: ${imc.toFixed(2)}`);
+// mostraPaciente(paciente);
